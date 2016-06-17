@@ -7,6 +7,9 @@ rvm:
 
 deploy:
   provider: heroku
-  app: "limitless-castle-21500"
+  app: limitless-castle-21500
   api_key:
-    secure: "4f14525c-1df0-4327-bc86-e2331f94c4bb"
+    secure: 4f14525c-1df0-4327-bc86-e2331f94c4bb
+
+notifications:
+  slack: titansoft:JjaMBc9ngnXDLMo505n0382I
