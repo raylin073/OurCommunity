@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160617030430) do
+ActiveRecord::Schema.define(version: 20160617065520) do
 
   create_table "announcements", force: :cascade do |t|
     t.string   "announcer"
@@ -24,8 +24,11 @@ ActiveRecord::Schema.define(version: 20160617030430) do
   create_table "replies", force: :cascade do |t|
     t.string   "author"
     t.text     "comment"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.integer  "announcement_id"
   end
+
+  add_index "replies", ["announcement_id"], name: "index_replies_on_announcement_id"
 
 end
