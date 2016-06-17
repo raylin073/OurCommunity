@@ -1,15 +1,13 @@
 language: ruby
 rvm:
- - 2.2
-# uncomment and edit the following line if your project needs to run something other than `rake`:
-# script: bundle exec rspec spec
-#
-
+- 2.2
 deploy:
   provider: heroku
-  app: limitless-castle-21500
   api_key:
-    secure: 4f14525c-1df0-4327-bc86-e2331f94c4bb
-
+    secure: nkpSlOqXha5ZYOiEooMlh7ilg0eHgPxQIODFVt6kkpHPC1sMEUtk/S3P89NKP9VPHkwFTls/sdrpLQD5NsQutDaGx4ODWsDwGzplaq7IIGCAt9SqxZzyOmsSUzQveG5idvbRh4FbT6AmOZf7q3iLZtD8ghLTvOh2Zfz1E1Vt+sskKfgJH2h3lXu8fnZjfRaeckiCcn7TbgegDvgsdLUolELd6heCaRSgwNKV+BcjEmg3OydP0g4CGH1b2HbEpZJ1sqaEidgmmanfA5prAma3hlolPX5xZTEdKR8Dden+NrNJ8TtmLArzskkM5NiC2aEhUGlOYVaS9ZMBNg2JBni6wyag++0LudNP9l3neGfccV4mzUmJRR/z/hvVB9uzv3cUb+7Ma8XmoWWbYud/f1Ld/5iXJ/zUJLg7Hcn3W+lvtY5dV5NR1sOosPMI01I7kcXiRUtOLXKLF5NEWLUVP90tFz296DCZBes8z1VcLeyOst76/deeUzq4Oc+YbrJ132vz6i7oBTlpIYqjNtTgdHPPDRFa1FbGgfsy+MIOkkVEEp6PSf53CFBy/hFccuR2sQfvMu/TrTlu7XiFzZ8i9+QSgizhwmiFG32qJCTHoD7ON73RFuCbVRZtW1w36iBxIdQeCj/PquJidJ9fnS2K1p3m6PdcwB7SQTtZOxrT8pUB54Q=
+  app: OurCommunity
+  on:
+    repo: raylin073/OurCommunity
 notifications:
-  slack: titansoft:JjaMBc9ngnXDLMo505n0382I
+  slack:
+    secure: RTVfNelxWzEFzfh5ZL/dVZjHTVV2rQeOtHRNsuf74boNie8a83HbHbWWtt5ccwfH8Z5Z+qKJhmWzEXWQGAmL4YHnhOan/MrR4BraAhg25pRxFUj6FhvdkD6lrSxodpxV6TNa7QTs2CDxWXfXJ8R2J2JrdIRyN/bI8czzzUQ/JpxzPUNGgrgOJ+fT5VMhTyzMUS0KiMBSIEDYw20LtLBnNSrU23wMmyzF+3HHWnzRw0QA9mqYZCEMlBVUzjUjTbIK4DoIQH3ejJID0kVjeiVVNrz6oLSVe4kyTtWSl8CIdfW9VC1VzIPIBbtLbVClXUQsgyK7Wvscv8rrh9M6YhhkZYoWvqQNXbfpxMdaei6xkI7Yp6iHGJqGtuaX9227D1wUzy9OPsVpnrPCjOtk4NgXV6tOWK9bfqZrW94T/VTKwJI3p7VXSIY91CkKh7EUC7xzAxp03Bw09ByQDuRDFSqDrgObwxM2SAGiTHW3aHPjZMCbXGfdA6YIGp4u1r9zWBFFvW4geigy35vmXL0yBcIjGUoAMzG64Yn0UXrh/RIN8747eCnyOgxoliqw5Zogl2c69jl+4HP5QS4Si5ad9CADZXJP5+d4qGj9phAn7hvXBO2klqbKvvOYzzsCc8h29FoS54MbaCY1ETZwPET7HTyboruHFFQt+ClPO0L5IBpWa0E=
