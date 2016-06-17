@@ -5,6 +5,9 @@ rvm:
 # script: bundle exec rspec spec
 #
 
+before_script:
+- bundle exec rake db:test:prepare
+
 deploy:
   provider: heroku
   app: limitless-castle-21500
