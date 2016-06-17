@@ -3,3 +3,10 @@ rvm:
  - 2.2
 # uncomment and edit the following line if your project needs to run something other than `rake`:
 # script: bundle exec rspec spec
+#
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: "4f14525c-1df0-4327-bc86-e2331f94c4bb"
+    app: "limitless-castle-21500"
