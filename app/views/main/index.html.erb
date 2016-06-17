@@ -1,3 +1,20 @@
-<h1>Main#index</h1>
+<h1>Listing Announcement</h1>
+ 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Announcer</th>
+    <th>Detail</th>
+  </tr>
+ 
+  <% @announcements.each do |announcement| %>
+    <tr>
+      <td><%= announcement.title %></td>
+      <td><%= announcement.announcer %></td>
+      <td><%= announcement.detail %></td>
+    </tr>
+  <% end %>
+</table>
+
 <p>Find me in app/views/main/index.html.erb</p>
 <%= link_to 'Add an annoucement', new_announcement_path %>
